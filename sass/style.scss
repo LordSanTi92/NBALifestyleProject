@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.westConference {
+  position: relative;
+  border-top-right-radius: 600px;
+  border-bottom-right-radius: 600px;
+  background-color: black;
+  width: 350px;
+  height: 600px;
+  overflow: hidden;
+
+}
