@@ -1,0 +1,78 @@
+.westConference {
+  position: absolute;
+  // transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  border: 1px solid black;
+  border-top-right-radius: 600px;
+  border-bottom-right-radius: 600px;
+  width: 350px;
+  height: 80vh;
+  min-height: 600px;
+  overflow: hidden;
+
+  .team {
+    position: relative;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    width: 100%;
+    height: 6.667%;
+
+    p {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-of-type(1) {
+      background-image: url('http://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png');
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: 60%;
+    }
+
+    &:nth-of-type(2) {
+      background-image: url('https://pbs.twimg.com/profile_images/577322203416383488/jSw1K9vM.png');
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: 70%;
+    }
+
+    &:nth-of-type(3) {
+      background-image: url('http://checkfinalscore.com/wp-content/uploads/2016/05/wariors-logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 130%;
+    }
+
+    &:nth-of-type(4) {
+      background-image: url('https://s3.amazonaws.com/file.imleagues/Images/Schools/Uploaded/201502/20152209234.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &:nth-of-type(5) {
+      background-image: url('https://dff2h0hbfv6w4.cloudfront.net/7BgZQdrQQtqZLBPRfMXF_LAClippersLogo-secondary.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(6) {
+      background-image: url('http://content.sportslogos.net/logos/6/237/full/uig7aiht8jnpl1szbi57zzlsh.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(7) {
+      background-image: url('http://cdn2.bigcommerce.com/server1400/a03c0/product_images/uploaded_images/grizzlies-logo.png?t=1477334717');
+      background-repeat: no-repeat;
+      background-position: 80% 35%;
+      background-size: 110%;
+    }
+  }
+
+}

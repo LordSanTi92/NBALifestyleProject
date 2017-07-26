@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.westConference {
+.pitch {
   position: relative;
-  border-top-right-radius: 600px;
-  border-bottom-right-radius: 600px;
-  background-color: black;
-  width: 350px;
-  height: 600px;
-  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid black;
+  width: 99vw;
+  min-width: 1300px;
+  height: 99vh;
+  min-height: 650px;
 
 }

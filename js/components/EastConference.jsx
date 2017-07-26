@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+require("../../sass/components/EastConference.scss")
 
 class EastConference extends React.Component{
   render(){
@@ -7,15 +8,6 @@ class EastConference extends React.Component{
           </div>
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 export default EastConference
