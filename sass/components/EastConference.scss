@@ -11,4 +11,137 @@
   height: 80vh;
   min-height: 600px;
   overflow: hidden;
+
+  .team {
+    position: relative;
+    transform: scale(1);
+    transition: all 400ms ease-in;
+    width: 100%;
+    height: 6.667%;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    -webkit-transition: all 400ms ease-in;
+    -ms-transform: scale(1);
+    -ms-transition: all 400ms ease-in;
+    -moz-transform: scale(1);
+    -moz-transition: all 400ms ease-in;
+
+    &:hover {
+      transform: scale(1.5);
+      transition: all 400ms ease-in;
+      cursor: pointer;
+      -webkit-transform: scale(1.5);
+      -webkit-transition: all 400ms ease-in;
+      -ms-transform: scale(1.5);
+      -ms-transition: all 400ms ease-in;
+      -moz-transform: scale(1.5);
+      -moz-transition: all 400ms ease-in;
+    }
+
+    &:nth-of-type(1) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1024px-Atlanta_Hawks_logo.svg.png');
+      background-repeat: no-repeat;
+      background-position: 120% 45%;
+      background-size: 60%;
+    }
+
+    &:nth-of-type(2) {
+      background-image: url('https://images.vexels.com/media/users/3/129509/isolated/preview/b9439b4f4a5115e4e7995ab6450ab1b0-boston-celtics-logo-by-vexels.png');
+      background-repeat: no-repeat;
+      background-position: -75% 20%;
+      background-size: 115%;
+    }
+
+    &:nth-of-type(3) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1000px-Brooklyn_Nets_newlogo.svg.png');
+      background-repeat: no-repeat;
+      background-position: 150% 10%;
+      background-size: 90%;
+    }
+
+    &:nth-of-type(4) {
+      background-image: url('http://media.bizj.us/view/img/1651891/hornetsprimarylogo1*1200xx915-515-0-184.png');
+      background-repeat: no-repeat;
+      background-position: 40% 20%;
+      background-size: 150%;
+    }
+
+    &:nth-of-type(5) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/1018px-Chicago_Bulls_logo.svg.png');
+      background-repeat: no-repeat;
+      background-position: 0% 65%;
+      background-size: 120%;
+    }
+
+    &:nth-of-type(6) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/it/8/8b/Cleveland_Cavaliers_Logo.png');
+      background-repeat: no-repeat;
+      background-position: 50% 70%;
+      background-size: 140%;
+    }
+
+    &:nth-of-type(7) {
+      background-image: url('http://vignette3.wikia.nocookie.net/logopedia/images/c/c0/DetroitPistonsOld.png/revision/latest?cb=20100915190717');
+      background-repeat: no-repeat;
+      background-position: 50% 40%;
+      background-size: 120%;
+    }
+
+    &:nth-of-type(8) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/1214px-Indiana_Pacers.svg.png');
+      background-repeat: no-repeat;
+      background-position: 50% 37%;
+      background-size: 150%;
+    }
+
+    &:nth-of-type(9) {
+      background-image: url('http://www.officialpsds.com/images/thumbs/Miami-Heat-2013-14-Logo-psd95347.png');
+      background-repeat: no-repeat;
+      background-position: 50% 30%;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(10) {
+      background-image: url('http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/mil.png');
+      background-repeat: no-repeat;
+      background-position: 45% 50%;
+      background-size: 135%;
+    }
+
+    &:nth-of-type(11) {
+      background-image: url('http://www.vectorsland.com/imgd/l42736-new-york-knicks-logo-22462.png');
+      background-repeat: no-repeat;
+      background-position: 20% 30%;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(12) {
+      background-image: url('http://www.logoeps.com/wp-content/uploads/2012/12/orlando-magic-logo-vector.png');
+      background-repeat: no-repeat;
+      background-position: -50% 53%;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(13) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1024px-Philadelphia_76ers_logo.svg.png');
+      background-repeat: no-repeat;
+      background-position: -80% 50%;
+      background-size: 110%;
+    }
+
+    &:nth-of-type(14) {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/1024px-Toronto_Raptors_logo.svg.png');
+      background-repeat: no-repeat;
+      background-position: 145% 30%;
+      background-size: 85%;
+    }
+
+    &:nth-of-type(15) {
+      background-image: url('http://a4.espncdn.com/combiner/i?img=%2Fi%2Fteamlogos%2Fnba%2F500%2Fwsh.png');
+      background-repeat: no-repeat;
+      background-position: 170% 25%;
+      background-size: 80%;
+    }
+  }
+
 }

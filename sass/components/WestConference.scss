@@ -14,50 +14,63 @@
 
   .team {
     position: relative;
-    border-top: 1px solid green;
-    border-bottom: 1px solid green;
+    transform: scale(1);
+    transition: all 300ms ease-in;
     width: 100%;
     height: 6.667%;
+    -webkit-transform: scale(1);
+    -webkit-transition: all 300ms ease-in;
+    -ms-transform: scale(1);
+    -ms-transition: all 300ms ease-in;
+    -moz-transform: scale(1);
+    -moz-transition: all 300ms ease-in;
 
-    p {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+    &:hover {
+      transform: scale(1.2);
+      transition: all 300ms ease-in;
+      z-index: 2;
+      cursor: pointer;
+      -webkit-transform: scale(1.2);
+      -webkit-transition: all 300ms ease-in;
+      -ms-transform: scale(1.2);
+      -ms-transition: all 300ms ease-in;
+      -moz-transform: scale(1.2);
+      -moz-transition: all 300ms ease-in;
     }
 
     &:nth-of-type(1) {
       background-image: url('http://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png');
       background-repeat: no-repeat;
-      background-position: center left;
-      background-size: 60%;
+      background-position: -10% 30%;
+      background-size: 70%;
     }
 
     &:nth-of-type(2) {
       background-image: url('https://pbs.twimg.com/profile_images/577322203416383488/jSw1K9vM.png');
       background-repeat: no-repeat;
-      background-position: center left;
-      background-size: 70%;
+      background-position: -30% 65%;
+      background-size: 80%;
     }
 
     &:nth-of-type(3) {
-      background-image: url('http://checkfinalscore.com/wp-content/uploads/2016/05/wariors-logo.png');
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/393px-Golden_State_Warriors_logo.svg.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: 130%;
+      background-position: -50% 55%;
+      background-size: 95%;
     }
 
     &:nth-of-type(4) {
       background-image: url('https://s3.amazonaws.com/file.imleagues/Images/Schools/Uploaded/201502/20152209234.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
+      background-position: -25% 55%;
+      background-size: 92%;
     }
 
     &:nth-of-type(5) {
       background-image: url('https://dff2h0hbfv6w4.cloudfront.net/7BgZQdrQQtqZLBPRfMXF_LAClippersLogo-secondary.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: 110%;
+      background-position: 70% 50%;
+      background-size: 115%;
     }
 
     &:nth-of-type(6) {
@@ -73,6 +86,61 @@
       background-position: 80% 35%;
       background-size: 110%;
     }
-  }
 
+    &:nth-of-type(8) {
+      background-image: url('https://cdn.nba.net/nba-drupal-prod/styles/landscape/s3/2017-04/MTimberwolves_Global-2017.png?itok=Cni1p7tK');
+      background-repeat: no-repeat;
+      background-position: 50% 45%;
+      background-size: 120%;
+    }
+
+    &:nth-of-type(9) {
+      background-image: url('http://content.sportslogos.net/logos/6/4962/full/2227_new_orleans_pelicans-alternate-2014.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 120%;
+    }
+
+    &:nth-of-type(10) {
+      background-image: url('https://goodlogo.com/images/logos/oklahoma_city_thunder_logo_3929.png');
+      background-repeat: no-repeat;
+      background-position: 50% 35%;
+      background-size: 100%;
+    }
+
+    &:nth-of-type(11) {
+      background-image: url('http://content.sportslogos.net/logos/6/238/full/9329_phoenix_suns-secondary-2014.png');
+      background-repeat: no-repeat;
+      background-position: 60% 30%;
+      background-size: 135%;
+    }
+
+    &:nth-of-type(12) {
+      background-image: url('http://cdn.bleacherreport.net/images/team_logos/328x328/portland_trail_blazers.png');
+      background-repeat: no-repeat;
+      background-position: 80% 50%;
+      background-size: 125%;
+    }
+
+    &:nth-of-type(13) {
+      background-image: url('http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/sac.png');
+      background-repeat: no-repeat;
+      background-position: 200% 52%;
+      background-size: 105%;
+    }
+
+    &:nth-of-type(14) {
+      background-image: url('http://logos-download.com/wp-content/uploads/2016/04/San_Antonio_Spurs_logo.png');
+      background-repeat: no-repeat;
+      background-position: 80% 40%;
+      background-size: 120%;
+    }
+
+    &:nth-of-type(15) {
+      background-image: url('http://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/jazz/JAZZ1617-Logo-Primary.png');
+      background-repeat: no-repeat;
+      background-position: -10% 55%;
+      background-size: 60%;
+    }
+}
 }

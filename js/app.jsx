@@ -26,24 +26,40 @@ let westConferenceTeams=['Dallas Mavericks',
 'Sacramento Kings',
 'San Antonio Spurs',
 'Utah Jazz'
+];
+let eastConferenceTeams=['Atlanta Hawks',
+'Boston Celtics',
+'Brooklyn Nets',
+'Charlotte Hornets',
+'Chicago Bulls',
+'Cleveland Cavaliers',
+'Detroit Pistons',
+'Indiana Pacers',
+'Miami Heat',
+'Milwaukee Bucks',
+'New York Knicks',
+'Orlando Magic',
+'Philadelphia 76ers',
+'Toronto Raptors',
+'Washington Wizards'
 ]
 
 class App extends React.Component{
   render(){
     return <div className='pitch'>
-            <EastBar />
-            <EastConference />
+            <WestBar />
+            <WestConference westTeams={this.props.westTeams} />
             <MiddleLine />
             <MiddleCircle />
-            <WestConference westTeams={this.props.westTeams} />
-            <WestBar />
+            <EastConference eastTeams={this.props.eastTeams} />
+            <EastBar />
             </div>
   }
 }
 
 
 ReactDOM.render(
-  <App westTeams={westConferenceTeams}/>,
+  <App westTeams={westConferenceTeams} eastTeams={eastConferenceTeams}/>,
   document.getElementById('app')
 )
 
