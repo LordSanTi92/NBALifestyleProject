@@ -33,6 +33,7 @@
   "dependencies": {
     "react": "*",
     "react-dom": "*",
+    "react-redux": "^5.0.5",
     "redux": "*"
   },
   "homepage": "https://github.com/LordSanTi92/NBALifestyleProject#readme"

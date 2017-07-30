@@ -6,11 +6,13 @@ import EastBar from './components/EastBar.jsx';
 import WestBar from './components/WestBar.jsx';
 import MiddleLine from './components/MiddleLine.jsx';
 import MiddleCircle from './components/MiddleCircle.jsx';
-
+import store from './redux/stores/store';
 
 
 require("../sass/style.scss")
+
 document.addEventListener('DOMContentLoaded',()=>{
+
 let westConferenceTeams=['Dallas Mavericks',
 'Denver Nuggets',
 'Golden State Warriors',
@@ -27,6 +29,7 @@ let westConferenceTeams=['Dallas Mavericks',
 'San Antonio Spurs',
 'Utah Jazz'
 ];
+
 let eastConferenceTeams=['Atlanta Hawks',
 'Boston Celtics',
 'Brooklyn Nets',
@@ -48,7 +51,7 @@ class App extends React.Component{
   render(){
     return <div className='pitch'>
             <WestBar />
-            <WestConference westTeams={this.props.westTeams} />
+            <WestConference value={store.getState()} onPick={e=>store.dispatch({type:"PICKED",club:e})} westTeams={this.props.westTeams} />
             <MiddleLine />
             <MiddleCircle />
             <EastConference eastTeams={this.props.eastTeams} />
@@ -57,10 +60,13 @@ class App extends React.Component{
   }
 }
 
-
+function render(){
 ReactDOM.render(
   <App westTeams={westConferenceTeams} eastTeams={eastConferenceTeams}/>,
   document.getElementById('app')
 )
+}
+render();
+store.subscribe(render)
 
 });
