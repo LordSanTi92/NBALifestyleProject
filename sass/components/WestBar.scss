@@ -2,19 +2,19 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: 1px solid red;
+  border-right: 3px solid white;
   width: 70px;
   height: 100%;
   min-height: 550px;
 
   p {
     position: absolute;
-    bottom: 300px;
+    bottom: 50%;
     left: -237px;
     transform: rotate(-90deg) translateY(-50%);
     width: 600px;
     text-align: center;
-    color: black;
-    font-size: 50px;  
+    color: white;
+    font-size: 50px;
   }
 }

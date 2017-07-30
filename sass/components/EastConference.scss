@@ -4,15 +4,17 @@
   top: 50%;
   right: 70px;
   transform: translateY(-50%);
-  border: 1px solid black;
+  border: 3px solid white;
+  border-right: 0;
   border-top-left-radius: 600px;
   border-bottom-left-radius: 600px;
+  background-color: white;
   width: 350px;
   height: 80vh;
   min-height: 600px;
   overflow: hidden;
 
-  &:hover { 
+  &:hover {
     cursor: pointer;
   }
 

@@ -4,9 +4,11 @@
   top: 50%;
   left: 70px;
   transform: translateY(-50%);
-  border: 1px solid black;
+  border: 3px solid white;
+  border-left: 0;
   border-top-right-radius: 600px;
   border-bottom-right-radius: 600px;
+  background-color: white;
   width: 350px;
   height: 80vh;
   min-height: 600px;
