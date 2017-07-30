@@ -6,6 +6,7 @@ import EastBar from './components/EastBar.jsx';
 import WestBar from './components/WestBar.jsx';
 import MiddleLine from './components/MiddleLine.jsx';
 import MiddleCircle from './components/MiddleCircle.jsx';
+import BackButton from './components/BackButton.jsx';
 import store from './redux/stores/store';
 
 
@@ -50,12 +51,13 @@ let eastConferenceTeams=['Atlanta Hawks',
 class App extends React.Component{
   render(){
     return <div className='pitch'>
-            <WestBar />
-            <WestConference value={store.getState()} onPick={e=>store.dispatch({type:"PICKED",club:e})} westTeams={this.props.westTeams} />
+            <WestBar value={store.getState()} />
+            <WestConference value={store.getState()} onPick={(name,logo)=>store.dispatch({type:"PICKED",club:name,logo:logo})} westTeams={this.props.westTeams} />
             <MiddleLine />
+            <BackButton value={store.getState()} toDefault={()=>store.dispatch({type:"PICKED",club:"",logo:""})}/>
             <MiddleCircle />
             <EastConference eastTeams={this.props.eastTeams} />
-            <EastBar />
+            <EastBar value={store.getState()} />
             </div>
   }
 }
